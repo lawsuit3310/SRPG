@@ -1,10 +1,9 @@
-using System;
-using System.IO;
-using System.Threading.Tasks;
+using System.Linq;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
       private static Map map;
+
       private async void Start()
       {
             //Map.Create(10,10);

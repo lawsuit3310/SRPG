@@ -2,17 +2,17 @@ using System.Collections.Generic;
 
 public class Map
 {
-    private static int LimitX = 0;
-    private static int LimitY = 0;
+    private int LimitX = 0;
+    private int LimitY = 0;
 
-    public static int limitX
+    public int limitX
     {
         get { return LimitX; }
     }
-    public static int limitY
+    public int limitY
     {
         get { return LimitY; }
     }
     
-    public List<Cell> data;
+    public List<Cell> data = new List<Cell>();
 }

@@ -19,7 +19,6 @@ public class StageGameManager : MonoBehaviour
 
        private async void Start()
       {
-            //Map.Create(10,10);
             _map = await MapManager.LoadMapAsync("SampleMap.owlmap");
       }
 

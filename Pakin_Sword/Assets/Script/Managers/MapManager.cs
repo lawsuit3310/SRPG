@@ -9,12 +9,23 @@ public class MapManager
     {
         try
         {
+            Map result = new Map();
+            // 
             StreamReader sr = new StreamReader($"{Application.dataPath}/Maps/{_fileName} ");
             while (!sr.EndOfStream)
             {
-                var row = sr.ReadLine();
-            }
+                var row = sr.ReadLineAsync().Result.Split(' ');
 
+                foreach (var bit in row)
+                {
+                    switch (bit[0])
+                    {
+                        case '0':
+                            break;
+                    }
+
+                }
+            }
             sr.Close();
         }
         catch (Exception e)
