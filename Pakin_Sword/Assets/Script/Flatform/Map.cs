@@ -15,4 +15,9 @@ public class Map
     }
     
     public List<Cell> data;
+
+    public Map()
+    {
+        data = new List<Cell>();
+    }
 }
