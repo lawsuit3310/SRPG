@@ -20,8 +20,12 @@ public class StageManager : MonoBehaviour
 
       private void Start()
       {
+<<<<<<< HEAD:Pakin_Sword/Assets/Script/Managers/StageManager.cs
             //Map.Create(10,10);
             Map = MapManager.LoadMap("SampleMap2.owlmap");
+=======
+            _map = await MapManager.LoadMapAsync("SampleMap.owlmap");
+>>>>>>> 64bc989241388a6abc1cd905227a86903791ff83:Pakin_Sword/Assets/Script/Managers/StageGameManager.cs
       }
 
       private void Update()

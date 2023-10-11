@@ -23,7 +23,7 @@ public class CharacterLoader
         
         for (int i = 0; i < 9; i++)
         {
-            result.Data[i] = Convert.ToInt32(parseTarget[i]);
+            result.Stats[i] = Convert.ToInt32(parseTarget[i]);
         }
 
         result.Name = parseTarget[9];
