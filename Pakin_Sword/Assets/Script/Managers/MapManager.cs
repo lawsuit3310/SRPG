@@ -18,19 +18,13 @@ public class MapManager
         var result = new Map();
         try
         {
-<<<<<<< HEAD
             int lineHeight = 0;
             int lineWidth = 0;
-=======
-            Map result = new Map();
-            // 
->>>>>>> 64bc989241388a6abc1cd905227a86903791ff83
             StreamReader sr = new StreamReader($"{Application.dataPath}/Maps/{_fileName} ");
 
             while (!sr.EndOfStream)
             {
                 var row = sr.ReadLineAsync().Result.Split(' ');
-<<<<<<< HEAD
                 
                 for (int i = 0; i < row.Length; i++)
                 {
@@ -62,19 +56,7 @@ public class MapManager
             
             StageManager.Instance.gameObject.transform.position =
                 new Vector3(lineWidth * 0.5f, 0, lineHeight * 0.5f) * -1;
-=======
 
-                foreach (var bit in row)
-                {
-                    switch (bit[0])
-                    {
-                        case '0':
-                            break;
-                    }
->>>>>>> 64bc989241388a6abc1cd905227a86903791ff83
-
-                }
-            }
             sr.Close();
             _map = result;
             

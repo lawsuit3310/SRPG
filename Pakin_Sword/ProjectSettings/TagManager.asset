@@ -6,12 +6,7 @@ TagManager:
   tags:
   - Floor
   - Maintenance
-<<<<<<< HEAD
   - Map
-=======
-  - Allay
-  - Enemy
->>>>>>> 64bc989241388a6abc1cd905227a86903791ff83
   layers:
   - Default
   - TransparentFX

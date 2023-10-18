@@ -1,22 +1,10 @@
-using System.Linq;
-using UnityEngine;
-
-public abstract class CharacterBase : MonoBehaviour
+public abstract class CharacterBase
 {
-    [SerializeField]
-    protected CharacterDataBase Data;
-
-    private byte[] _position;
-    public byte[] Position
-    {
-        get { return _position.Any() ? _position : new byte [] {0,0};}
-    }
-    public CharacterDataBase data
-    {
-        get { return Data; }
-    }
+    protected CharacterDataBase data;
     
-    public string Name { get => Data.Name;}
+    public string Name { get => data.Name;}
+
+    internal int Coordinate = 1;
     
     public abstract void Create(int id);
     public abstract void Think();

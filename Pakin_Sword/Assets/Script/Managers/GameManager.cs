@@ -1,8 +1,9 @@
-using System.Linq;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
-<<<<<<< HEAD
       private static bool _isEditing = false;
       private static bool _isStarted = false; //스테이지가 실행된 후 실제로 게임이 시작 되었는지를 판별하는 변수 
 
@@ -22,11 +23,6 @@ public class GameManager : MonoBehaviour
       }
 
       private void Start()
-=======
-      private static Map map;
-
-      private async void Start()
->>>>>>> 64bc989241388a6abc1cd905227a86903791ff83
       {
             //Map.Create(10,10);
       }
